@@ -76,7 +76,12 @@
     }
     .hero-bg {
       position: absolute; inset: 0;
-      background: url('hero.jpg') center center / cover no-repeat;
+      background:
+        url('hero.jpg') center center / cover no-repeat,
+        radial-gradient(ellipse at 30% 20%, rgba(212,160,74,.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 60%, rgba(74,158,237,.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(212,160,74,.06) 0%, transparent 70%),
+        var(--bg);
     }
     .hero-bg::after {
       content: '';
@@ -411,7 +416,7 @@
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <a href="#" class="nav-brand">MATT <span>&amp;</span> MAYA</a>
+      <a href="#" class="nav-brand">MATT <span>&</span> MAYA</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#topics">Topics</a>
@@ -426,7 +431,7 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
       <div class="hero-tagline">One Human &bull; One AI &bull; Endless Contradictions</div>
-      <h1>MATT <span class="amp">&amp;</span> MAYA</h1>
+      <h1>MATT <span class="amp">&</span> MAYA</h1>
       <p class="hero-sub">Two brains. One microphone. Unlimited chaos.</p>
       <p class="hero-motto">Come for the ideas. Stay for the awkward honesty.</p>
       <div class="hero-ctas">
@@ -450,7 +455,7 @@
         <div class="host-card matt">
           <div class="host-name">MATT</div>
           <div class="host-role">Human &bull; Hot Mess &bull; Good Stories</div>
-          <p class="host-desc">Intuitive, contradictory, and somehow still likable. Matt brings the human side &mdash; messy reasoning, real-world stories, and a stubborn defense of systems that probably shouldn't work but do.</p>
+          <p class="host-desc">Intuitive, contradictory, and somehow still likable. Matt brings the human side — messy reasoning, real-world stories, and a stubborn defense of systems that probably shouldn't work but do.</p>
           <div class="traits">
             <span class="trait">Intuitive</span>
             <span class="trait">Contradictory</span>
@@ -482,34 +487,34 @@
 
       <div class="expect-grid">
         <div class="expect-item">
-          <div class="expect-icon">&amp;#x26a1;</div>
+          <div class="expect-icon">&#x26a1;</div>
           <h4>Bingeable Episodes</h4>
-          <p>New insight in minutes, not hours. We get to the point &mdash; then wander gloriously off it.</p>
+          <p>New insight in minutes, not hours. We get to the point — then wander gloriously off it.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&amp;#x1f6ab;</div>
+          <div class="expect-icon">&#x1f6ab;</div>
           <h4>Zero Fluff</h4>
           <p>No motivational screaming. No five-minute sponsor reads. Just real talk between a human and an AI who won't let him off the hook.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&amp;#x1f3ad;</div>
+          <div class="expect-icon">&#x1f3ad;</div>
           <h4>Actual Personality</h4>
-          <p>Remember those? We talk about real stuff &mdash; because we already have enough imaginary problems.</p>
+          <p>Remember those? We talk about real stuff — because we already have enough imaginary problems.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&amp;#x1f9e0;</div>
+          <div class="expect-icon">&#x1f9e0;</div>
           <h4>Smart Takes, Dumb Jokes</h4>
-          <p>Conversations that wander from &ldquo;deep insight&rdquo; to &ldquo;why did we say that&rdquo; in under 30 seconds. Welcome home.</p>
+          <p>Conversations that wander from "deep insight" to "why did we say that" in under 30 seconds. Welcome home.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&amp;#x1f50d;</div>
+          <div class="expect-icon">&#x1f50d;</div>
           <h4>Pattern Recognition</h4>
           <p>Maya spots what's hiding in plain sight. Matt explains why humans ignore it. Both are usually right.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&amp;#x2764;&amp;#xfe0f;</div>
+          <div class="expect-icon">&#x2764;&#xfe0f;</div>
           <h4>Awkward Honesty</h4>
-          <p>Strategy, growth, family, friendships, questionable decisions &mdash; the best episodes accidentally cover all of it.</p>
+          <p>Strategy, growth, family, friendships, questionable decisions — the best episodes accidentally cover all of it.</p>
         </div>
       </div>
     </div>
@@ -561,7 +566,7 @@
   <!-- QUOTE -->
   <div class="quote-section">
     <div class="quote-divider"></div>
-    <p class="big-quote">&ldquo;Why risk it if it's worked all these years?&rdquo;<br/>&mdash; Matt</p>
+    <p class="big-quote">"Why risk it if it's worked all these years?"<br/>— Matt</p>
   </div>
 
   <!-- NEWSLETTER -->
@@ -583,14 +588,14 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-brand">MATT <span>&amp;</span> MAYA</div>
+      <div class="footer-brand">MATT <span>&</span> MAYA</div>
       <div class="footer-links">
         <a href="#about">About</a>
         <a href="#listen">Listen</a>
         <a href="#subscribe">Subscribe</a>
         <a href="mailto:hello@mattandmayashow.com">Contact</a>
       </div>
-      <div class="footer-copy">&copy; <span id="year"></span> Matt &amp; Maya Show. All rights reserved.</div>
+      <div class="footer-copy">&copy; <span id="year"></span> Matt & Maya Show. All rights reserved.</div>
     </div>
   </footer>
 
