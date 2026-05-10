@@ -708,11 +708,11 @@
             <div class="mini-title">Newsletter</div>
             <h3>Get a heads-up when a new episode drops.</h3>
             <p>Drop your email below. No spam. No algorithms. Just a nudge when something new is live.</p>
-            <form class="field-row" action="#" method="POST">
-              <input type="email" name="email" placeholder="you@example.com" required />
-              <button class="btn primary" type="submit">Notify me</button>
+            <form class="field-row" id="subscribeForm">
+              <input type="email" name="email" id="subEmail" placeholder="you@example.com" required />
+              <button class="btn primary" type="submit" id="subBtn">Notify me</button>
             </form>
-            <div class="note">
+            <div class="note" id="subNote">
               We respect your inbox. Unsubscribe anytime. We're not that clingy.
             </div>
           </div>
@@ -1053,6 +1053,44 @@
     // Init
     window.addEventListener('resize', initBars);
     initBars();
+
+    // ─── Email Subscription ───
+    const subForm = document.getElementById('subscribeForm');
+    const subBtn = document.getElementById('subBtn');
+    const subNote = document.getElementById('subNote');
+    const subEmail = document.getElementById('subEmail');
+
+    subForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = subEmail.value.trim();
+      if (!email) return;
+
+      subBtn.disabled = true;
+      subBtn.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('https://n8n.growthmindsetai.tech/webhook/matt-maya-subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
+        });
+
+        if (res.ok) {
+          subBtn.textContent = 'You\'re in!';
+          subBtn.style.background = 'rgba(34,197,94,.8)';
+          subNote.textContent = 'Welcome aboard. We\'ll be in touch.';
+          subEmail.value = '';
+          subEmail.disabled = true;
+        } else {
+          throw new Error('fail');
+        }
+      } catch (err) {
+        subBtn.textContent = 'Try again';
+        subBtn.disabled = false;
+        subNote.textContent = 'Something went wrong. Give it another shot.';
+        subNote.style.color = 'rgba(239,68,68,.7)';
+      }
+    });
 
     // Polyfill roundRect if needed
     if (!ctx.roundRect) {
