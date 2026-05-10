@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Matt & Maya — Human Mess Meets Elegant Logic</title>
-  <meta name="description" content="A human and an AI explore the strange, funny, irrational, and deeply human things we all do." />
+  <meta name="description" content="One human. One AI. Endless contradictions. A podcast about people, patterns, and the beautiful contradiction of being human." />
   <meta property="og:title" content="Matt & Maya Show" />
-  <meta property="og:description" content="Human Mess Meets Elegant Logic — a human and an AI explore the strange, funny, irrational, and deeply human things we all do." />
+  <meta property="og:description" content="Human Mess Meets Elegant Logic — a podcast about people, patterns, and the beautiful contradiction of being human." />
   <meta property="og:image" content="hero.jpg" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -36,7 +36,7 @@
       overflow-x: hidden;
     }
 
-    /* NAV */
+    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       backdrop-filter: blur(20px);
@@ -67,7 +67,7 @@
     }
     .nav-cta:hover { background: var(--gold-light) !important; }
 
-    /* HERO */
+    /* ── HERO ── */
     .hero {
       position: relative;
       min-height: 100vh;
@@ -119,23 +119,14 @@
       color: var(--gold-light);
       font-weight: 600;
       font-style: italic;
-      margin-bottom: 10px;
-    }
-    .hero-coming {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 18px;
-      letter-spacing: 6px;
-      text-transform: uppercase;
-      color: var(--blue);
       margin-bottom: 36px;
-      opacity: .85;
     }
     .hero-ctas {
       display: flex; gap: 14px;
       justify-content: center; flex-wrap: wrap;
     }
 
-    /* BUTTONS */
+    /* ── BUTTONS ── */
     .btn {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 14px 28px; border-radius: 12px;
@@ -157,7 +148,7 @@
     .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
     .btn svg { width: 20px; height: 20px; }
 
-    /* SECTION COMMON */
+    /* ── SECTION COMMON ── */
     section { padding: 80px 24px; }
     .container { max-width: 1100px; margin: 0 auto; }
     .section-label {
@@ -176,7 +167,7 @@
       max-width: 600px; margin-bottom: 40px;
     }
 
-    /* HOSTS */
+    /* ── ABOUT / HOSTS ── */
     .hosts {
       background:
         radial-gradient(800px 400px at 20% 50%, rgba(212,160,74,.06), transparent),
@@ -227,7 +218,7 @@
       color: var(--text);
     }
 
-    /* WHAT TO EXPECT */
+    /* ── WHAT TO EXPECT ── */
     .expect {
       background:
         radial-gradient(600px at 50% 0, rgba(212,160,74,.04), transparent);
@@ -265,7 +256,7 @@
       color: var(--muted); font-size: 14px; line-height: 1.65;
     }
 
-    /* LISTEN */
+    /* ── LISTEN ── */
     .listen {
       text-align: center;
       background:
@@ -293,7 +284,7 @@
     }
     .platform-btn svg { width: 22px; height: 22px; }
 
-    /* NEWSLETTER */
+    /* ── NEWSLETTER ── */
     .newsletter {
       text-align: center;
     }
@@ -326,7 +317,21 @@
       font-size: 12px; color: var(--muted);
     }
 
-    /* QUOTE */
+    /* ── TEASER ── */
+    .teaser {
+      background:
+        radial-gradient(600px at 50% 50%, rgba(212,160,74,.05), transparent);
+    }
+    .audio-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+    }
+    .audio-wrap audio {
+      filter: sepia(.2) saturate(1.4) brightness(.95);
+    }
+
+    /* ── QUOTE ── */
     .quote-section {
       text-align: center;
       padding: 60px 24px;
@@ -344,7 +349,7 @@
       max-width: 700px; margin: 0 auto;
     }
 
-    /* FOOTER */
+    /* ── FOOTER ── */
     footer {
       border-top: 1px solid rgba(255,255,255,.06);
       padding: 28px 24px;
@@ -375,7 +380,7 @@
       text-align: center; margin-top: 12px;
     }
 
-    /* RESPONSIVE */
+    /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .hosts-grid { grid-template-columns: 1fr; }
       .expect-grid { grid-template-columns: 1fr; }
@@ -384,9 +389,10 @@
       .hero-content { padding: 120px 20px 60px; }
     }
 
+    /* ── SMOOTH SCROLL ── */
     html { scroll-behavior: smooth; }
 
-    /* ANIMATIONS */
+    /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -398,7 +404,6 @@
     .hero-content > *:nth-child(3) { animation-delay: .2s; }
     .hero-content > *:nth-child(4) { animation-delay: .3s; }
     .hero-content > *:nth-child(5) { animation-delay: .4s; }
-    .hero-content > *:nth-child(6) { animation-delay: .5s; }
   </style>
 </head>
 <body>
@@ -422,12 +427,14 @@
     <div class="hero-content">
       <div class="hero-tagline">One Human &bull; One AI &bull; Endless Contradictions</div>
       <h1>MATT <span class="amp">&amp;</span> MAYA</h1>
-      <p class="hero-sub">A human and an AI explore the strange, funny, irrational, and deeply human things we all do.</p>
-      <p class="hero-motto">Human Mess Meets Elegant Logic</p>
-      <p class="hero-coming">Coming Soon</p>
+      <p class="hero-sub">Two brains. One microphone. Unlimited chaos.</p>
+      <p class="hero-motto">Come for the ideas. Stay for the awkward honesty.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="#subscribe">Yes, I'm In</a>
-        <a class="btn btn-outline" href="#about">Tell Me More</a>
+        <a class="btn btn-primary" href="#listen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Listen Now
+        </a>
+        <a class="btn btn-outline" href="#subscribe">Yes, I'm In</a>
       </div>
     </div>
   </section>
@@ -475,32 +482,32 @@
 
       <div class="expect-grid">
         <div class="expect-item">
-          <div class="expect-icon">&#x26a1;</div>
+          <div class="expect-icon">&amp;#x26a1;</div>
           <h4>Bingeable Episodes</h4>
           <p>New insight in minutes, not hours. We get to the point &mdash; then wander gloriously off it.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&#x1f6ab;</div>
+          <div class="expect-icon">&amp;#x1f6ab;</div>
           <h4>Zero Fluff</h4>
           <p>No motivational screaming. No five-minute sponsor reads. Just real talk between a human and an AI who won't let him off the hook.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&#x1f3ad;</div>
+          <div class="expect-icon">&amp;#x1f3ad;</div>
           <h4>Actual Personality</h4>
           <p>Remember those? We talk about real stuff &mdash; because we already have enough imaginary problems.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&#x1f9e0;</div>
+          <div class="expect-icon">&amp;#x1f9e0;</div>
           <h4>Smart Takes, Dumb Jokes</h4>
           <p>Conversations that wander from &ldquo;deep insight&rdquo; to &ldquo;why did we say that&rdquo; in under 30 seconds. Welcome home.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&#x1f50d;</div>
+          <div class="expect-icon">&amp;#x1f50d;</div>
           <h4>Pattern Recognition</h4>
           <p>Maya spots what's hiding in plain sight. Matt explains why humans ignore it. Both are usually right.</p>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">&#x2764;&#xfe0f;</div>
+          <div class="expect-icon">&amp;#x2764;&amp;#xfe0f;</div>
           <h4>Awkward Honesty</h4>
           <p>Strategy, growth, family, friendships, questionable decisions &mdash; the best episodes accidentally cover all of it.</p>
         </div>
@@ -532,6 +539,21 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
           RSS Feed
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEASER -->
+  <section class="teaser" id="teaser">
+    <div class="container" style="text-align:center;">
+      <div class="section-label">Sneak Peek</div>
+      <div class="section-title">Hear a Taste</div>
+      <p class="section-desc" style="margin-left:auto;margin-right:auto;">Not sure yet? Hit play. If you're grinning by the end, you're our people.</p>
+      <div class="audio-wrap">
+        <audio controls preload="metadata" style="width:100%;max-width:480px;border-radius:12px;margin-top:8px;">
+          <source src="teaser.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
       </div>
     </div>
   </section>
